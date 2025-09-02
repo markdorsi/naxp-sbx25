@@ -170,6 +170,27 @@ body {
     text-align: center;
 }
 
+/* Page-specific styles */
+main {
+    min-height: calc(100vh - 140px);
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2rem;
@@ -179,7 +200,46 @@ body {
         flex-direction: column;
     }
     
-    .nav-links {
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #333;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu a {
+        padding: 0.5rem 2rem;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .nav-menu a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links {
+        position: relative;
+    }
+    
+    /* Grid responsive adjustments */
+    div[style*="grid-template-columns: 1fr 2fr"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
     }
 }

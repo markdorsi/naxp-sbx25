@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fred's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav" style="background: #333;">
+        <div class="nav-brand">Fred's Site</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main style="padding: 4rem 0;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 3rem; color: #333;">Get In Touch</h1>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 4rem; color: #666; max-width: 600px; margin-left: auto; margin-right: auto;">
+                I'd love to hear about your project and discuss how we can work together to bring your ideas to life.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                <div>
+                    <h2 style="margin-bottom: 2rem; color: #667eea;">Let's Talk</h2>
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <span style="font-size: 1.5rem; margin-right: 1rem;">📧</span>
+                            <div>
+                                <strong>Email</strong><br>
+                                <span style="color: #666;">fred@example.com</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <span style="font-size: 1.5rem; margin-right: 1rem;">📱</span>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <span style="color: #666;">+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <span style="font-size: 1.5rem; margin-right: 1rem;">📍</span>
+                            <div>
+                                <strong>Location</strong><br>
+                                <span style="color: #666;">San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: #667eea;">Follow Me</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" style="display: inline-block; padding: 0.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 0.25rem;">LinkedIn</a>
+                            <a href="#" style="display: inline-block; padding: 0.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 0.25rem;">GitHub</a>
+                            <a href="#" style="display: inline-block; padding: 0.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 0.25rem;">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 style="margin-bottom: 2rem; color: #667eea;">Send a Message</h2>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 3rem; border-radius: 1rem; text-align: center;">
+                <h2 style="margin-bottom: 1rem; color: #333;">Project Timeline</h2>
+                <p style="color: #666; margin-bottom: 2rem;">Here's what you can expect when working with me:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div>
+                        <div style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">1</div>
+                        <h4 style="margin-bottom: 0.5rem;">Discovery</h4>
+                        <p style="color: #666; font-size: 0.9rem;">We discuss your project goals and requirements</p>
+                    </div>
+                    <div>
+                        <div style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">2</div>
+                        <h4 style="margin-bottom: 0.5rem;">Planning</h4>
+                        <p style="color: #666; font-size: 0.9rem;">I create a detailed project plan and timeline</p>
+                    </div>
+                    <div>
+                        <div style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">3</div>
+                        <h4 style="margin-bottom: 0.5rem;">Development</h4>
+                        <p style="color: #666; font-size: 0.9rem;">Regular updates and feedback throughout development</p>
+                    </div>
+                    <div>
+                        <div style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">4</div>
+                        <h4 style="margin-bottom: 0.5rem;">Launch</h4>
+                        <p style="color: #666; font-size: 0.9rem;">Final testing, deployment, and ongoing support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Fred's Website. All rights reserved.</p>
+            <p>Powered by naxp</p>
+        </div>
+    </footer>
+</body>
+</html>

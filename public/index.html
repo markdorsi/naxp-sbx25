@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodbye World</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255,255,255,0.1);
-            border-radius: 1rem;
-            backdrop-filter: blur(10px);
-        }
-        h1 {
-            margin: 0 0 1rem 0;
-            font-size: 3rem;
-        }
-        p {
-            margin: 0;
-            opacity: 0.9;
-        }
-        .emoji {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
-    </style>
+    <title>Fred's Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">👋</div>
-        <h1>fred was here</h1>
-        <p>Your site is ready to deploy</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">Powered by naxp</p>
+    <div class="hero">
+        <nav class="nav">
+            <div class="nav-brand">Fred's Site</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>fred was here</h1>
+            <p class="hero-subtitle">Welcome to my personal website</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary">Learn More</button>
+                <button class="btn btn-secondary">Get Started</button>
+            </div>
+        </div>
     </div>
+
+    <section class="features">
+        <div class="container">
+            <h2>What I Do</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Web Development</h3>
+                    <p>Creating modern, responsive websites that work across all devices.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Design</h3>
+                    <p>Crafting beautiful user interfaces with attention to detail and usability.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Consulting</h3>
+                    <p>Providing expert advice on technology solutions and digital strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Fred's Website. All rights reserved.</p>
+            <p>Powered by naxp</p>
+        </div>
+    </footer>
 </body>
 </html>
